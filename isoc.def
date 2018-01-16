@@ -1,0 +1,288 @@
+! DEFINE ISOC.DEF
+! Description= Definition of the ISOGEN defaults file for size C batch isos
+! Rev=1             By=SAA       Ckd By=SAA        Date=22-Jan-1999
+!
+!  Added reference to notes table to match other delivered files.
+!
+ISOGEN_OPTIONS_BLOCK
+  10                                                            !10 lines follow
+  3275     0     1     1  1000     3     0    10     0    28     10    15    15     6     ! 1-14
+   457   610     1     1     4     1     0     0     0     0      1     0     1    10     ! 15-28
+   105     0     0   100     0   100 46046     1     0   100      0     0     0     3     ! 29-42
+     1     1     1     1     1     1     1     1     1     0      0     0     0     0     ! 43-56
+     0     0     1     1     2     2    62     1     0     1      0     0     0     0     ! 57-70
+  8000     0     0     0    0807     0     1     0     0     0      0     0     0     0     ! 71-84
+     0     0     0     0     0     0     0     0     0     0      0     0     0     0     ! 85-98
+     0     0     0     0     0     0     0     0     0     0 100000     0     1     0     ! 99-112
+     0     1     0   250     0     0     0    70     1     0      5     0     0     0     ! 113-126
+     0     0     0     0     0     0     0     0     0     0      0     0     0     0     ! 127-140
+INTERGRAPH_OPTIONS_BLOCK
+  6                                                             !6 lines follow
+     0     0     0     1     0     1     1     0    10     0     20    10     1     0     ! 1-14
+     0     2     1     0     1     1     0     1     1     0      0     0     1     0     ! 15-28
+     0     1     0     1     1     1     0     0     1     0      1     0     1     0     ! 29-42
+     0     0     3     0     0     0     0     0     0     0      0     0     0     0     ! 43-56
+     0     0     0     0     0     0     0     0     0     0      0     0     0     0     ! 57-70
+     0     0     0     0     0     0     0     0     0     0      0     0     0   999     ! 71-84
+FILES
+  14                                                            !14 LINES TO FOLLOW
+  'c:\win32app\ingr\pdiso\dat\isomap.tbl'                       !PDS TO ISOGEN MAP
+  'c:\win32app\ingr\pdiso\dat\symbol.lib'                       !USER DEFINED SYMBOL LIB 
+  ' '                                                           !LABEL DESCRIPTION LIBRARY
+  ' '                                                           !VALVE / OPERATOR TABLE
+  'c:\win32app\ingr\pdiso\dat\isomto.tbl'                       !MTO RECORD MAP
+  ' '                                                           !RESERVED
+  'c:\win32app\ingr\pdiso\dat\isoc.blk'                         !TITLE BLK TABLES FILE
+  'c:\win32app\ingr\pdiso\dat\isoc.nte'	    	                !SEGMENT DATA (NOTES) TABLE
+  ' '                                                           !RESERVED
+  ' '                                                           !DETAIL SKETCH CELL LIBRARY
+  'c:\win32app\ingr\pdiso\dat\isoc.ddf'                         !DRAWING DEFINITION FILE (DDF)
+  ' '                                                           !WELD DEFINITION FORMAT FILE (WDF)
+  ' '                                                           !MATERIAL LIST DEFINITION FILE (MLD)
+  ' '                                                           !BENDING PARAMETERS OUTPUT FILE 
+PIPELINE_HEADER
+  13                                                                            !13 lines follow
+ -6,   12, -2,   0,         '',      '',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Line ID label record/break
+ -7,    0,  0, 955,         '',     '-',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Piece mark prefix record
+ -11,  12, 12,   0,         '',      '',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Piping materials class record/break
+ -14,   0,  0,   0,         '',      '',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Date record
+ -15,   0,  0, 956,         '', 'INSUL',  0,  0,   0,  0,  0,   0,  0,  0, 957  !Insulation record/break
+ -16,   0,  0, 958,         '', 'TRACE',  0,  0, 959,  0,  0, 984,  0,  0, 960  !Heat tracing reqmts record/break
+ -17,  12, 40,   0,         '',      '',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Coating reqmts record/break
+ -41,  12,  7,   0,         '', 'PKGNO',  0,  0,   0,  0,  0,   0, 67, 42,   0  !Packaged system no break
+ -42,  12, 23,   0, 'PER SPEC',      '',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Sch/thk override break
+ -43,  12, 41,   0,         '', 'CLEAN',  0,  0,   0,  0,  0,   0, 67, 39,   0  !Cleaning reqmts break
+ -44,   0,  0, 961,         '',      '',  0,  0,   0,  0,  0,   0,  0,  0,   0  !Testing reqmts break
+ -45,  12, 21,   0,         '',      '', 34, 33,   0, 50, 28,   0, 67, 30,   0  !Hold status break
+ -99, -12, 20,   0,         '',      '', 34, 32,   0, 50, 27,   0, 67, 29,   0  !Construction status label
+ATEXT_SPECIFICATIONS
+  70                                                                            !70 lines follow
+ -207, 'NPD'                                                                    !Nominal pipe diameter callout
+ -208, 'CONN TO'                                                                !Nozzle connection callout
+ -209, 'SEE ISO'                                                                !Iso/Sheet continued on callout
+ -213, 'STEM'                                                                   !Spindle callout
+ -215, ' '                                                                      !Remove reducing flange callout
+ -217, ' '                                                                      !Remove miter callout
+ -218, ' '                                                                      !Remove lobster callout
+ -219, ' '                                                                      !Remove reinforcing pad callout
+ -220, ' '                                                                      !Remove loose component callout
+ -221, 'FFW'                                                                    !Field Fit Weld callout
+ -222, 'SLOPE'                                                                  !Slope callout
+ -243, 'FLAT SIDE'                                                              !Eccentric reducer flat side callout
+ -244, 'U'                                                                      !Up orientation callout
+ -245, 'D'                                                                      !Down orientation callout
+ -246, 'N'                                                                      !North orientation callout
+ -247, 'S'                                                                      !South orientation callout
+ -248, 'E'                                                                      !East orientation callout
+ -249, 'W'                                                                      !West orientation callout
+ -250, ' '                                                                      !Remove date from ISOGEN title block
+ -253, ' '                                                                      !Remove piping materials class from ISOGEN title block
+ -255, 'SHT'                                                                    !Iso continuation prefix
+ -270, ' '                                                                      !Remove insulation from ISOGEN title block
+ -271, ' '                                                                      !Remove heat tracing from ISOGEN title block
+ -272, ' '                                                                      !Remove coating from ISOGEN title block
+ -276, 'SEE SHT'                                                                !Sheet continued from callout
+ -277, ' '                                                                      !Remove orifice flange callout
+ -278, ' '                                                                      !Remove dial face orientation callout
+ -282, ' '                                                                      !Remove sight glass window orientation callout
+ -284, ' '                                                                      !Remove tee bend callout
+ -287, 'ORIENT'                                                                 !Skewed olet orientation callout
+ -288, 'LINE :'                                                                 !Line ID break (-6) callout
+ -289, 'CLASS:'                                                                 !PMC break (-11) callout
+ -290, 'INSUL:'                                                                 !Insulation reqmts break (-15) callout
+ -291, 'TRACE:'                                                                 !Heat tracing reqmts break (-16) callout
+ -292, 'COAT :'                                                                 !Coating reqmts break (-17) callout
+ -293, 'PKGNO:'                                                                 !Packaged system no break (-41) callout
+ -294, 'SCH  :'                                                                 !Sch/thk override break (-42) callout
+ -295, 'CLEAN:'                                                                 !Cleaning reqmts break (-43) callout
+ -296, 'TEST :'                                                                 !Testing reqmts break (-44) callout
+ -297, 'STAT :'                                                                 !Hold status break (-45) callout
+ -298, ' '                                                                      !Remove tee elbow callout
+ -300, 'SHOP MATERIALS'                                                         !Shop materials callout in BOM
+ -303, 'DESCRIPTION'                                                            !Description callout in BOM
+ -304, 'NPD'                                                                    !Nominal pipe diameter callout in BOM
+ -305, 'CMDTY CODE'                                                             !Commodity code callout in BOM
+ -307, ' '                                                                      !Remove pipe callout in BOM
+ -308, ' '                                                                      !Remove fittings callout in BOM
+ -309, ' '                                                                      !Remove flanges callout in BOM
+ -310, 'OTHER THAN SHOP MATERIALS'                                              !Other than shop materials callout in BOM
+ -311, ' '                                                                      !Remove gaskets callout in BOM
+ -312, ' '                                                                      !Remove bolts callout in BOM
+ -313, ' '                                                                      !Remove valves callout in BOM
+ -314, 'INSTRUMENTS'                                                            !Instruments callout in BOM
+ -315, 'PIPE SUPPORTS'                                                          !Pipe supports callout in BOM
+ -316, 'PIECE MARKS'                                                            !Pipe marks callout in BOM
+ -317, ' '                                                                      !Remove pipe NPD callout from title block
+ -318, ' '                                                                      !Remove centerline length callout from title block
+ -330, 'IN'                                                                     !NPD units callout in BOM
+ -400, ' '                                                                      !Remove tracing legend from title block
+ -401, ' '                                                                      !Remove insulation legend from title block
+ -402, ' '                                                                      !Remove pipe support legend from title block
+ -403, ' '                                                                      !Remove compression joint legend from title block
+ -404, ' '                                                                      !Remove screwed joint legend from title block
+ -405, ' '                                                                      !Remove socketweld joint legend from title block
+ -406, ' '                                                                      !Remove field welded joint legend from title block
+ -407, ' '                                                                      !Remove shopwelded legend from title block
+ -410, ' '                                                                      !Remove pipe spool nos from title block
+ -411, ' '                                                                      !Remove site connection legend from title block
+ -451, ' '                                                                      !Tapping Connection Note
+START_POINT_NOTES
+  1                                                                             !1 line follows
+  0, 12, 310,   0                                                               !Line ID label at start of line
+TYPE_1_LABELS
+  5                                                                             !5 lines follow
+  1, 34, 46, 962                                                                !Piping commodity component remark label
+  2, 34, 46, 962                                                                !Piping specialty component remark label
+  4, 67, 52, 963                                                                !Instrument remark label
+  3,-50, 26, 966                                                                !Cold spring label
+  3, 50, 38, 986                                                                !Pipe remark label
+TYPE_2_LABELS
+  22                                                                            !22 lines follow
+  34,  3, '6Q3C82', 0, 967                                                      !RWELD size
+  34,  3, '6Q2C11', 0, 968                                                      !Operate 6Q2C11 in closed position
+  34,  3, '6Q2C12', 0, 968                                                      !Operate 6Q2C12 in closed position
+  34,  3, '6Q2C13', 0, 968                                                      !Operate 6Q2C13 in closed position
+  34,  3, '6Q2C10', 0, 969                                                      !Operate 6Q2C10 in open position
+  34,  3, '6Q2C15', 0, 969                                                      !Operate 6Q2C15 in open position
+  34,  3, '6Q3C81', 0, 997                                                      !Non-radial offset label
+  34,  3, '6Q3C83', 0, 997                                                      !Non-radial offset label
+  34,  3, '6Q3C85', 0, 997                                                      !Non-radial offset label
+  34,  3,   '6Q1C', 4, 964                                                      !Piping commodity valves opening action label
+  34,  3,   '6P6C', 4, 964                                                      !Piping specialty components opening action label
+  34,  3,   '6Q6C', 4, 964                                                      !Piping specialty components opening action label
+  67,  3,   '7P1E', 4, 965                                                      !Instrument opening action label
+  67,  3, '7P2C01', 0, 987                                                      !7P2C01 press set pt label
+  67,  3, '7P2C06', 0, 987                                                      !7P2C06 press set pt label
+  67,  3, '7P2C09', 0, 988                                                      !7P2C09 vac set pt label
+  67,  3, '7P2C12', 0, 989                                                      !7P2C12 press/vac set pt label
+  67,  3, '7P2C14', 0, 989                                                      !7P2C14 press/vac set pt label
+  67,  3, '7P2C16', 0, 987                                                      !7P2C16 press set pt label
+  67,  3, '7P2C18', 0, 988                                                      !7P2C18 vac set pt label
+  67,  3,   '7P3C', 4, 965                                                      !Instrument opening action label
+  80, 16,      '3', 0, 978                                                      !Pipe support existing construction status label
+TYPE_3_LABELS
+  0                                                                             !0 lines follow
+NOZZLE_NOTE
+  5                                                                             !5 lines follow
+ -1, -21, 952                                                                   !Equip no (concatenated with label 953)
+ -1, -22, 953                                                                   !Nozzle no
+  1,  22, 954                                                                   !NPD-prep-rating for bolted nozzles
+  2,  22, 954                                                                   !NPD-prep-rating for FEM nozzles
+  3,  22, 950                                                                   !NPD-prep for MAL nozzles
+PRIMARY_ORIENTATION_NOTE                                                        !To define operators requiring primary orientation
+  24                                                                            !24 lines follow
+  'OP9',     ''                                                                 !SN=OP9
+  'OP_271',  ''                                                                 !SN=OP_271
+  'OP_291',  ''                                                                 !SN=OP_291
+  'OP_311',  ''                                                                 !SN=OP_311
+  'OP_331',  ''                                                                 !SN=OP_331
+  'OP_332',  ''                                                                 !SN=OP_332
+  'OP_333',  ''                                                                 !SN=OP_333
+  'OP_334',  ''                                                                 !SN=OP_334
+  'OP_351',  ''                                                                 !SN=OP_351
+  'OP_391',  ''                                                                 !SN=OP_391
+  'OP_413',  ''                                                                 !SN=OP_413
+  'OP_452',  ''                                                                 !SN=OP_452
+  'OP_491',  ''                                                                 !SN=OP_491
+  'OP_493',  ''                                                                 !SN=OP_493
+  'OP_494',  ''                                                                 !SN=OP_493
+  'OP_571',  ''                                                                 !SN=OP_571
+  'OP_572',  ''                                                                 !SN=OP_572
+  'OP_573',  ''                                                                 !SN=OP_573
+  'OP_574',  ''                                                                 !SN=OP_574
+  'OP_711',  ''                                                                 !SN=OP_711
+  'OP_811',  ''                                                                 !SN=OP_811
+  'OP_853',  ''                                                                 !SN=OP_853
+  'OP_854',  ''                                                                 !SN=OP_854
+  'OP_931',  ''                                                                 !SN=OP_931
+SECONDARY_ORIENTATION_NOTE                                                      !To define operators requiring secondary orientation
+  24                                                                            !24 lines follow
+  'OP9',     ''                                                                 !SN=OP9
+  'OP_271',  ''                                                                 !SN=OP_271
+  'OP_291',  ''                                                                 !SN=OP_291
+  'OP_311',  ''                                                                 !SN=OP_311
+  'OP_331',  ''                                                                 !SN=OP_331
+  'OP_332',  ''                                                                 !SN=OP_332
+  'OP_333',  ''                                                                 !SN=OP_333
+  'OP_334',  ''                                                                 !SN=OP_334
+  'OP_351',  ''                                                                 !SN=OP_351
+  'OP_391',  ''                                                                 !SN=OP_391
+  'OP_413',  ''                                                                 !SN=OP_413
+  'OP_452',  ''                                                                 !SN=OP_452
+  'OP_491',  ''                                                                 !SN=OP_491
+  'OP_493',  ''                                                                 !SN=OP_493
+  'OP_494',  ''                                                                 !SN=OP_493
+  'OP_571',  ''                                                                 !SN=OP_571
+  'OP_572',  ''                                                                 !SN=OP_572
+  'OP_573',  ''                                                                 !SN=OP_573
+  'OP_574',  ''                                                                 !SN=OP_574
+  'OP_711',  ''                                                                 !SN=OP_711
+  'OP_811',  ''                                                                 !SN=OP_811
+  'OP_853',  ''                                                                 !SN=OP_853
+  'OP_854',  ''                                                                 !SN=OP_854
+  'OP_931',  ''                                                                 !SN=OP_931
+DOTTED_SYMBOLOGY_CODE_LIST_VALUES
+  1                                                                             !1 line follows
+  12, 20, 34, 32, 50, 27, 67, 29, 6, 3, 4, 5, 6, 7, 8                           !Construction status (CL130)
+NOMTO_CODE_LIST_VALUES
+  1                                                                             !1 line follows
+  12, 20, 34, 32, 50, 27, 67, 29, 6, 3, 4, 5, 6, 7, 8                           !Construction status (CL130)
+SHOP_FABCAT_CODE_LIST_VALUES
+  1                                                                             !1 line follows
+  6,  5,  15, 25, 35, 45, 95                                                    !Shop fabricated codelist values from CL180
+END_POINT_COMPONENT_LABELS
+  1                                                                             !1 line follows
+  '', 12,   0, 951,  12, 0, 951,  12, 0, 951                                    !Line ID + dgn area
+LINE_ID_DEFINITION
+  1                                                                             !1 lines follow
+  12,  3, ''                                                                    !Line ID
+MOVABLE_TEXT
+  10                                                                            !10 lines follow:
+  -6,     25,     5,  1,  0,  0,  0                                             !Relocate -6 record to lower left corner of iso
+ -25,      0,     0,  0,  0,  0,  0                                             !Relocate -25 record to outside of iso border
+ -41,      0,     0,  0,  0,  0,  0                                             !Relocate -41 record to outside of iso border
+ -42,      0,     0,  0,  0,  0,  0                                             !Relocate -42 record to outside of iso border
+ -43,      0,     0,  0,  0,  0,  0                                             !Relocate -43 record to outside of iso border
+ -44,      0,     0,  0,  0,  0,  0                                             !Relocate -44 record to outside of iso border
+ -45,      0,     0,  0,  0,  0,  0                                             !Relocate -45 record to outside of iso border
+ -700, 42790, 43390,  0,  0,  0,  0                                             !Relocate N arrow to upper right quadrant of iso
+ -702,     0,     0,  0,  0,  0,  0                                             !Relocate ISOGEN sheet no callout
+ -703,     0,     0,  0,  0,  0,  0                                             !Relocate ISOGEN number of sheets callout
+NEW_SYMBOL_KEYS
+  0                                                                             !0 lines follow
+GENITM_NOTE_FORMAT
+  4                                                                             !4 lines follow
+ 'CHAINWHEEL$WITH [2] CHAIN'                                                    !Length of chain note
+ 'PROVIDE FLOOR STAND$WITH Y1=[2]'                                              !Floorstand note
+ 'PROVIDE EXTENSION STEM$WITH Y1=[2]'                                           !Extension stem note
+ ' '                                                                            !Turn off note for implied materials
+ALTERNATE_DESCRIPTION_INDEX
+  3                                                                             !3 lines follow
+  2, 34,  0,  971                                                               !To access ZX_SPCLTYDESCR.LIB specialties
+  5, 80,  0,  972                                                               !To access ZX_SPCLTYDESCR.LIB for pipe supports
+  4, 67,  0,  973                                                               !To access ZX_SPCLTYDESCR.LIB for instruments
+INGR_ATEXT_SPECIFICATIONS
+  17                                                                            !17 LINES TO FOLLOW
+  1, 'NOT FOUND', ''                                                            !Used based on Intergraph option 6 and ATEXT -209
+  2, 'BOLT LENGTH', ''                                                          !Used based on Intergraph option 58
+  3, 'NUTS PER BOLT', ''                                                        !Used based on Intergraph option 52
+  4, 'CHAIN_', ''                                                               !Used based on Intergraph option 33,56
+  5, 'FSTAND_', ''                                                              !Used based on Intergraph option 33
+  6, 'XSTEM_', ''                                                               !Used based on Intergraph option 33
+  7, 'HOR', ''                                                                  !Horizontal - Used for an operator in a 2plane ske
+  8, 'VOR', ''                                                                  !Vertical - Used for an operator in a 2plane ske
+  9, 'DEG', ''                                                                  !Degree - Used for an operator in a 2plane ske
+ 10, 'E', ''                                                                    !Used with skewed operator orientation notes
+ 11, 'N', ''                                                                    !Used with skewed operator orientation notes
+ 12, 'U', ''                                                                    !Used with skewed operator orientation notes
+ 13, 'W', ''                                                                    !Used with skewed operator orientation notes
+ 14, 'S', ''                                                                    !Used with skewed operator orientation notes
+ 15, 'D', ''                                                                    !Used with skewed operator orientation notes
+ 16, '****', ''                                                                 !Used based on Intergraph option 26 Pos A set to 2
+ 17, 'SCHEDULE', ''                                                             !Used based on Intergraph option 10 set to 1
+USER_DEFINED_WELDS
+  3
+  10, 11,12,13,14,15,16,17,18,19,20,1,"WW"                                      !Weld types 11-20 are shop welds
+   2, 21,22, 2, "WS"                                                            !Weld types 21, 22 are field welds
+   1, 24, 2, "WF"                                                               !Weld type 24 is a field fit weld
+
